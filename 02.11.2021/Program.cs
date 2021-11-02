@@ -9,11 +9,13 @@ namespace _02._11._2021
     {
         static void Main(string[] args)
         {
-            string s = "sdfsm sdf";
-            foreach (var item in Split(' ',s))
+            #region Split
+            string InputStr = "sdf-sdsffsdf-dsf-sdf-sdf-ds-f-sd-f-dsf-sd-f-sdfm sdf";
+            foreach (var item in Split('-', InputStr))
             {
                 Console.WriteLine(item);
             }
+            #endregion
 
             #region join
             string[] Input = { "salam", "necesen", "mende", "hello", "yazsiyam " };
@@ -42,7 +44,7 @@ namespace _02._11._2021
                     stringBuilder.Append(Value[i]);
                 }
 
-                if (Value[i] == Separator || i==Value[Value.Length-1])
+                if (Value[i] == Separator || i==Value.Length-1)
                 {
                     Result[count1] = stringBuilder.ToString();
                     stringBuilder.Clear();
