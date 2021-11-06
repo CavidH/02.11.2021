@@ -18,7 +18,7 @@ namespace _02._11._2021
             #endregion
 
             #region join
-            string[] Input = { "salam", "necesen", "mende", "hello", "yazsiyam " };
+            string[] Input = { "salam", "necesen", "test", "hello", "sjsjsjs " };
             Console.WriteLine(string.Join("-", Input));
             Console.WriteLine(Join("-", Input));
             #endregion
